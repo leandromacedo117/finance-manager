@@ -8,7 +8,7 @@ const Home = () => {
         {
         !userLogin ? (<Login
             item='Login'
-            textButton='register how'
+            textButton='register now'
             />)
         : <Login
             

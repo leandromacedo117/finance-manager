@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 
 import MoneyImage from '../../images/money.png'
-import './index.css'
+import './index.scss'
 import LoginC from './LoginC'
 import Register from '../register/Register'
 
@@ -9,7 +9,7 @@ const Login = ({item, textButton}) => {
     const [register, setRegister] = useState(false)
 
     const test = () => {
-        setRegister(true)
+        setRegister(!register)
     }
   return (
     <div className="Login">
@@ -33,7 +33,7 @@ const Login = ({item, textButton}) => {
             type="submit"
             className='button-create'
             onClick={test}
-            > { !register ? textButton : ''}
+            > { !register ? textButton : 'I have an account'}
             </button>
             </div>
         </div>
